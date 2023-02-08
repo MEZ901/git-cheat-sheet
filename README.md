@@ -1,5 +1,29 @@
 # git-cheat-sheet
 
+## ROUTE
+
+- [setup](#setup)
+  - [set a name that is identifiable for credit when review version history](#set-a-name-that-is-identifiable-for-credit-when-review-version-history)
+  - [set an email address that will be associated with each history marker](#set-an-email-address-that-will-be-associated-with-each-history-marker)
+  - [set automatic command line coloring for Git for easy reviewing](#set-automatic-command-line-coloring-for-git-for-easy-reviewing)
+- [setup and init](#setup-and-init)
+  - [initialize an existing directory as a Git repository](#initialize-an-existing-directory-as-a-git-repository)
+  - [retrieve an entire repository from a hosted location via URL](#retrieve-an-entire-repository-from-a-hosted-location-via-url)
+- [stage and snapshot](#stage-and-snapshot)
+  - [show modified files in working directory, staged for your next commit](#show-modified-files-in-working-directory-staged-for-your-next-commit)
+  - [add a file as it looks now to your next commit (stage)](#add-a-file-as-it-looks-now-to-your-next-commit-stage)
+  - [unstage a file while retaining the changes in working directory](#unstage-a-file-while-retaining-the-changes-in-working-directory)
+  - [diff of what is changed but not staged](#diff-of-what-is-changed-but-not-staged)
+  - [diff of what is staged but not yet commited](#diff-of-what-is-staged-but-not-yet-commited)
+  - [commit your staged content as a new commit snapshot](#commit-your-staged-content-as-a-new-commit-snapshot)
+- [branch and merge](#branch-and-merge)
+- [inspect and compare](#inspect-and-compare)
+- [tracking path changes](#tracking-path-changes)
+- [ignoring patterns](#ignoring-patterns)
+- [share and update](#share-and-update)
+- [rewrite history](#rewrite-history)
+- [temporary commits](#temporary-commits)
+
 ## SETUP
 ### set a name that is identifiable for credit when review version history
 ```bash
@@ -13,7 +37,7 @@ git config --global user.email “[valid-email]”
 ```bash
 git config --global color.ui auto
 ```
-## SETUP & INIT
+## SETUP AND INIT
 ### initialize an existing directory as a Git repository
 ```bash
 git init
@@ -22,7 +46,7 @@ git init
 ```bash
 git clone [url]
 ```
-## STAGE & SNAPSHOT
+## STAGE AND SNAPSHOT
 ### show modified files in working directory, staged for your next commit
 ```bash
 git status
@@ -47,7 +71,7 @@ git diff --staged
 ```bash
 git commit -m “[descriptive message]”
 ```
-## BRANCH & MERGE
+## BRANCH AND MERGE
 ### list your branches. a * will appear next to the currently active branch
 ```bash
 git branch
@@ -68,7 +92,7 @@ git merge [branch]
 ```bash
 git log
 ```
-## INSPECT & COMPARE
+## INSPECT AND COMPARE
 ### show the commit history for the currently active branch
 ```bash
 git log
@@ -118,7 +142,7 @@ pattern*/
 ```bash
 git config --global core.excludesfile [file]
 ```
-## SHARE & UPDATE
+## SHARE AND UPDATE
 ### add a git URL as an alias
 ```bash
 git remote add [alias] [url]
